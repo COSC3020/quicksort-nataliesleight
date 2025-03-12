@@ -19,7 +19,7 @@ function quicksort(array)
  
             if (pivot - 1 > low) {
                 stack[++top] = low;
-                stack[++top] = p - 1;
+                stack[++top] = pivot - 1;
             }
  
             if (pivot + 1 < high) {

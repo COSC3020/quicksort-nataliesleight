@@ -14,7 +14,7 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-The quicksort has two functions: quicksort and partition. The quicksort function has a while loop that runs up to n-2 times. Within this while loop is the function call to partition. Inside of partition is a for loop that loops from the variable low to the variable high. The variables change for each call of partition, decreasing the amount of loops. The first one loops n-1 times and decreases after. Thus the next loop is n-2 and the next n-3 until 1. The sum of all these for loops is $\frac{n}{2}(n-1)$. Multiplying the two loop times together gives
+The quicksort has two functions: quicksort and partition. The quicksort function has a while loop that runs up to n-2 times. Within this while loop is the function call to partition. Inside of partition is a for loop that loops from the variable low to the variable high. The variables change for each call of partition, decreasing the amount of loops. The first one loops n-1 times and decreases after. Thus the next loop is n-2 and the next n-3 until 1. The sum of all these for loops is $\frac{n}{2}(n-1)$. Multiplying this expression together gives
 
 $(n-1)(\frac{n}{2})$
 

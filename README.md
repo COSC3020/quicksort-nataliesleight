@@ -16,13 +16,13 @@ markdown file.
 
 The quicksort has two functions: quicksort and partition. The quicksort function has a while loop that runs up to n-2 times. Within this while loop is the function call to partition. Inside of partition is a for loop that loops from the variable low to the variable high. The variables change for each call of partition, decreasing the amount of loops. The first one loops n-1 times and decreases after. Thus the next loop is n-2 and the next n-3 until 1. The sum of all these for loops is $\frac{n}{2}(n-1)$. Multiplying the two loop times together gives
 
-$(n-2)(n-1)(\frac{n}{2})$
+$(n-1)(\frac{n}{2})$
 
-$= \frac{1}{2}n^3 - \frac{3}{2}n^2 + n$
+$\frac{n^2}{2} - \frac{n}{2}$
 
 and thus
 
-$T(n) ∈ \Theta(\frac{1}{2}n^3)$
+$T(n) ∈ \Theta(\frac{n^2}{2})$
 
 Sources:
 
